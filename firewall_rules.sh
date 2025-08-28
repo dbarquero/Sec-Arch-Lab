@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# firewall_rules.sh - Configuración de firewall con iptables
-# Autor: CyberBalance CR
+# firewall_rules.sh - FW ptables
+# Autor: David Barquero V
 
 set -e
 
