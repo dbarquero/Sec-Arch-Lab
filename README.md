@@ -21,3 +21,9 @@ Este laboratorio demuestra cómo aplicar **Security as Code** en entornos cloud 
 ### Aplicar reglas básicas
 ```bash
 sudo ./firewall_rules.sh apply
+
+---
+##  Ejemplo de salida
+
+
+<img width="637" height="422" alt="image" src="https://github.com/user-attachments/assets/7eb0da29-69af-4e72-b284-71d7cdbd949d" />
