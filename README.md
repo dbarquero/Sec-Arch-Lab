@@ -25,5 +25,11 @@ sudo ./firewall_rules.sh apply
 ---
 ##  Ejemplo de salida
 
-
-<img width="637" height="422" alt="image" src="https://github.com/user-attachments/assets/7eb0da29-69af-4e72-b284-71d7cdbd949d" />
+Chain INPUT (policy DROP)
+ pkts bytes target     prot opt in     out     source               destination
+   10  1005 ACCEPT     all  --  lo     *       0.0.0.0/0            0.0.0.0/0
+   22  6560 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0   ctstate RELATED,ESTABLISHED
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0   tcp dpt:22
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0   tcp dpt:80
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0   tcp dpt:443
+    0     0 LOG        all  --  *      *       0.0.0.0/0            0.0.0.0/0   LOG flags 0 level 4 prefix "IPTables-Dropped: "
